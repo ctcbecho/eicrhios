@@ -1,0 +1,3 @@
+[submodule "idv.kaomk.eicrhios.dyndns"]
+	path = idv.kaomk.eicrhios.dyndns
+	url = https://ctcbecho@github.com/ctcbecho/eicrhios-dyndns.git
