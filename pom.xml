@@ -27,9 +27,19 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
+				<groupId>org.osgi</groupId>
+				<artifactId>org.osgi.core</artifactId>
+				<version>${osgi.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-api</artifactId>
 				<version>1.5.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>org.apache.felix.configadmin</artifactId>
+				<version>1.2.8</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.aries.blueprint</groupId>
@@ -92,7 +102,9 @@
 		</plugins>
 	</build>
 	<modules>
+		<module>idv.kaomk.eicrhios.utils</module>
 		<module>idv.kaomk.eicrhios.dyndns</module>
+		<module>idv.kaomk.eicrhios.shell.xmpp</module>
 		<module>idv.kaomk.eicrhios.tunnel</module>
 	</modules>
 </project>
