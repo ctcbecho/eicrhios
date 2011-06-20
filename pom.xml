@@ -5,7 +5,7 @@
 	<artifactId>eicrhios</artifactId>
 	<packaging>pom</packaging>
 	<name>Eicrhios</name>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<description>Eicrhios Service</description>
 
 	<properties>
@@ -14,6 +14,7 @@
 		<karaf.version>2.2.1</karaf.version>
 		<felix.plugin.version>2.3.4</felix.plugin.version>
 		<felix.fileinstall.version>3.1.10</felix.fileinstall.version>
+		<jacob.version>1.14.3</jacob.version>
 	</properties>
 
 	<dependencies>
@@ -99,12 +100,25 @@
 					<target>1.6</target>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.5</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.2</version>
+			</plugin>
 		</plugins>
 	</build>
-	<modules>
-		<module>idv.kaomk.eicrhios.utils</module>
-		<module>idv.kaomk.eicrhios.dyndns</module>
-		<module>idv.kaomk.eicrhios.shell.xmpp</module>
-		<module>idv.kaomk.eicrhios.tunnel</module>
-	</modules>
+<!-- 	<modules> -->
+<!-- 		<module>idv.kaomk.eicrhios.utils</module> -->
+<!-- 		<module>idv.kaomk.eicrhios.dyndns</module> -->
+<!-- 		<module>idv.kaomk.eicrhios.shell.xmpp</module> -->
+<!-- 		<module>idv.kaomk.eicrhios.tunnel</module> -->
+<!-- 	</modules> -->
 </project>
